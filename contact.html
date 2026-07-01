@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demander une démo — PATRISCOPE</title>
+  <meta name="description" content="Demandez une démo personnalisée de PATRISCOPE. Un expert vous recontacte sous 24h pour étudier vos besoins de gestion d'actifs." />
+  <meta name="theme-color" content="#1E3DF2" />
+  <link rel="canonical" href="https://www.patriscope.app/contact.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <meta property="og:title" content="Demander une démo — PATRISCOPE" />
+  <meta property="og:description" content="Un expert vous recontacte sous 24h pour une démo personnalisée." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero hero--split" style="padding-bottom:64px">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <div class="hero__grid" style="align-items:start">
+          <!-- Colonne gauche : infos -->
+          <div class="hero__copy">
+            <span class="badge reveal"><span class="dot"></span> Demander une démo</span>
+            <h1 class="reveal" data-delay="1" style="margin-top:20px;font-size:clamp(2.2rem,1.4rem+2.6vw,3.2rem)">Voyez PATRISCOPE en action sur votre cas concret</h1>
+            <p class="lead reveal" data-delay="2" style="margin-top:18px">Échangez avec un expert et découvrez comment centraliser vos équipements, sécuriser votre conformité et piloter vos coûts.</p>
+
+            <ul class="feat-list reveal" data-delay="3" style="margin-top:30px">
+              <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Démo personnalisée</strong><p>Adaptée à votre secteur et à votre parc d'actifs.</p></div></li>
+              <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Sans engagement</strong><p>Aucune carte bancaire, aucune pression commerciale.</p></div></li>
+              <li><span class="mk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><strong>Réponse sous 24h</strong><p>Un expert vous recontacte rapidement.</p></div></li>
+            </ul>
+
+            <div class="card reveal" data-delay="3" style="margin-top:30px;background:var(--bg-soft)">
+              <strong style="color:var(--navy);display:block;margin-bottom:16px">Et après l'envoi ?</strong>
+              <div style="display:flex;gap:14px;margin-bottom:14px;align-items:flex-start"><span class="wf-num" style="width:34px;height:34px;font-size:.9rem;margin:0;flex:none">1</span><div><strong style="font-size:.95rem;color:var(--navy)">Échange de cadrage</strong><p class="text-muted" style="font-size:.86rem">Nous comprenons vos enjeux et votre périmètre.</p></div></div>
+              <div style="display:flex;gap:14px;margin-bottom:14px;align-items:flex-start"><span class="wf-num" style="width:34px;height:34px;font-size:.9rem;margin:0;flex:none">2</span><div><strong style="font-size:.95rem;color:var(--navy)">Démo personnalisée</strong><p class="text-muted" style="font-size:.86rem">Une présentation centrée sur vos cas d'usage.</p></div></div>
+              <div style="display:flex;gap:14px;align-items:flex-start"><span class="wf-num" style="width:34px;height:34px;font-size:.9rem;margin:0;flex:none">3</span><div><strong style="font-size:.95rem;color:var(--navy)">Plan de déploiement</strong><p class="text-muted" style="font-size:.86rem">Une proposition claire, adaptée à votre rythme.</p></div></div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : formulaire -->
+          <div class="form-card reveal" data-delay="2" id="demo">
+            <div class="form-body">
+              <h3>Parlez-nous de votre projet</h3>
+              <p class="fc-sub">Tous les champs marqués d'un astérisque sont requis.</p>
+              <div class="form-alert"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> Merci de corriger les champs en rouge.</div>
+              <form data-demo novalidate>
+                <div class="honeypot"><label>Ne pas remplir<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+                <div class="form-row">
+                  <div class="field"><label for="c-prenom">Prénom <span class="req">*</span></label><input id="c-prenom" name="prenom" data-validate="text" required placeholder="Jean" /><span class="err">Champ requis.</span></div>
+                  <div class="field"><label for="c-nom">Nom <span class="req">*</span></label><input id="c-nom" name="nom" data-validate="text" required placeholder="Dupont" /><span class="err">Champ requis.</span></div>
+                </div>
+                <div class="field"><label for="c-societe">Société <span class="req">*</span></label><input id="c-societe" name="societe" data-validate="text" required placeholder="Votre entreprise" /><span class="err">Champ requis.</span></div>
+                <div class="form-row">
+                  <div class="field"><label for="c-email">Email professionnel <span class="req">*</span></label><input id="c-email" name="email" type="email" data-validate="email" required placeholder="jean.dupont@entreprise.com" /><span class="err">Email invalide.</span></div>
+                  <div class="field"><label for="c-tel">Téléphone</label><input id="c-tel" name="tel" type="tel" data-validate="tel" placeholder="+33 6 00 00 00 00" /><span class="err">Numéro invalide.</span></div>
+                </div>
+                <div class="form-row">
+                  <div class="field"><label for="c-nb">Nombre d'équipements</label><select id="c-nb" name="equipements"><option value="">Sélectionner…</option><option>Moins de 100</option><option>100 à 500</option><option>500 à 2 000</option><option>Plus de 2 000</option></select></div>
+                  <div class="field"><label for="c-secteur">Secteur d'activité</label><select id="c-secteur" name="secteur"><option value="">Sélectionner…</option><option>Industrie</option><option>Collectivité</option><option>Immobilier / bâtiment</option><option>Transport / logistique</option><option>Santé</option><option>Autre</option></select></div>
+                </div>
+                <div class="field"><label for="c-msg">Votre message</label><textarea id="c-msg" name="message" placeholder="Décrivez brièvement votre besoin…"></textarea></div>
+                <label class="checkbox"><input type="checkbox" required /> J'accepte que mes données soient utilisées pour être recontacté(e). Consultez notre <a href="#rgpd">politique de confidentialité</a>. <span class="req">*</span></label>
+                <button type="submit" class="btn btn--primary btn--block btn--lg"><span class="spinner"></span><span class="btn-label">Demander une démo</span><svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+                <p class="form-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Données hébergées en Europe · Confidentialité garantie</p>
+              </form>
+            </div>
+            <div class="form-success">
+              <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+              <h3>Demande envoyée !</h3>
+              <p class="text-muted">Merci, votre demande a bien été envoyée. Un expert PATRISCOPE vous recontactera sous 24h.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--tight" id="rgpd">
+      <div class="container">
+        <div class="logos reveal"><span class="logos__item">NORDEX</span><span class="logos__item">RHESO·TECH</span><span class="logos__item">CIVITAS</span><span class="logos__item">TEMPO·ONE</span><span class="logos__item">ALTIBAT</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/partials.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

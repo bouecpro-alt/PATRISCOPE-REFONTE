@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solutions par secteur et par enjeu — PATRISCOPE</title>
+  <meta name="description" content="Des solutions de gestion d'actifs adaptées à chaque organisation : industriels, collectivités, ETI, multi-sites, directions techniques, facility management et patrimoine bâti." />
+  <meta name="theme-color" content="#1E3DF2" />
+  <link rel="canonical" href="https://www.patriscope.app/solutions.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <meta property="og:title" content="Solutions PATRISCOPE — adaptées à chaque organisation" />
+  <meta property="og:description" content="Industriels, collectivités, ETI, multi-sites, facility management… PATRISCOPE s'adapte à votre structure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom:56px">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <div style="max-width:760px">
+          <span class="badge reveal"><span class="dot"></span> Solutions</span>
+          <h1 class="reveal" data-delay="1" style="margin-top:20px">Des solutions adaptées à chaque <span class="gradient-text">organisation.</span></h1>
+          <p class="lead reveal" data-delay="2" style="margin-top:20px">PATRISCOPE accompagne les équipes techniques, collectivités, industriels et gestionnaires multi-sites dans la maîtrise de leurs actifs physiques.</p>
+          <div class="hero__actions reveal" data-delay="3">
+            <a class="btn btn--primary btn--lg" href="contact.html">Demander une démo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a class="btn btn--secondary btn--lg" href="tarifs.html">Voir les tarifs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRILLE SOLUTIONS -->
+    <section class="section section--soft" style="padding-top:64px">
+      <div class="container">
+        <div class="grid grid-2" id="solutions-grid"></div>
+      </div>
+    </section>
+
+    <!-- PAR ENJEU -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal">Par enjeu</span>
+          <h2 class="reveal" data-delay="1">Quel que soit votre objectif, PATRISCOPE y répond.</h2>
+        </div>
+        <div class="grid grid-3" id="enjeux-grid"></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-block reveal">
+          <span class="glow" aria-hidden="true"></span><span class="cta-noise" aria-hidden="true"></span>
+          <svg class="cta-lines" viewBox="0 0 1200 400" preserveAspectRatio="none" aria-hidden="true"><path d="M-50 300 C 300 100 600 380 1250 120" stroke="rgba(255,255,255,0.18)" stroke-width="1.5" fill="none"/><path d="M-50 360 C 350 180 700 420 1250 200" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" fill="none"/></svg>
+          <h2>Trouvons la solution adaptée à votre structure</h2>
+          <p>Échangez avec un expert PATRISCOPE pour identifier les modules les plus pertinents pour vos enjeux.</p>
+          <div class="cta-actions"><a class="btn btn--on-dark btn--lg" href="contact.html">Demander une démo gratuite<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/partials.js"></script>
+  <script>
+    // Données solutions (rendu côté client pour rester DRY)
+    var SOL = [
+      ["industrie","factory","media-ind","Entreprises industrielles","Pilotez la maintenance de vos lignes de production, machines-outils et engins critiques.",["Maintenance prédictive des équipements","Suivi des contrôles réglementaires","Réduction des arrêts non planifiés"]],
+      ["collectivites","landmark","media-collec","Collectivités","Maîtrisez votre patrimoine public et vos obligations de contrôle sur tout le territoire.",["Gestion du patrimoine bâti","Conformité des ERP et écoles","Justification des budgets d'investissement"]],
+      ["eti","box","media-eti","ETI","Optimisez vos OPEX et CAPEX grâce à une vision précise du cycle de vie de vos actifs.",["Amortissement et valeur résiduelle","Consolidation multi-implantations","Arbitrages de renouvellement éclairés"]],
+      ["multi-sites","network","media-multi","Organisations multi-sites","Centralisez la donnée de tous vos sites avec une vision consolidée et comparative.",["Vue consolidée tous sites","Droits d'accès par périmètre","Tableaux de bord comparatifs"]],
+      ["directions-techniques","cpu","media-tech","Directions techniques","Offrez à vos équipes un référentiel unique et des indicateurs de pilotage fiables.",["Planification des interventions","Suivi des coûts d'exploitation","Reporting automatisé pour la direction"]],
+      ["facility","hat","media-fm","Facility management","Digitalisez vos services généraux et fluidifiez les interventions terrain.",["Déclaration d'incident par QR Code","Suivi des prestataires et SLA","Historique complet des bâtiments"]],
+      ["infrastructures","pin","media-infra","Gestionnaires d'infrastructures","Supervisez des équipements répartis et des réseaux étendus en toute sérénité.",["Géolocalisation des actifs","Maintenance préventive planifiée","Anticipation des renouvellements"]],
+      ["immobilier","home","media-immo","Immobilier / patrimoine bâti","Valorisez et suivez vos bâtiments avec une traçabilité technique complète.",["Carnet de santé des bâtiments","Suivi des diagnostics obligatoires","Pilotage énergétique"]]
+    ];
+    var ENJEUX = [
+      ["chart","Réduire les coûts","Identifiez les postes de dépense et anticipez les renouvellements pour optimiser votre budget."],
+      ["shield","Sécuriser la conformité","Ne manquez plus aucune échéance réglementaire grâce aux alertes automatiques."],
+      ["qr","Digitaliser les interventions","Donnez à vos équipes terrain un accès mobile rapide aux bonnes informations."],
+      ["layers","Centraliser les données","Réunissez tous vos actifs dans un référentiel unique, fiable et partagé."],
+      ["network","Piloter plusieurs sites","Comparez et coordonnez vos sites depuis une vue d'ensemble consolidée."]
+    ];
+    document.addEventListener("partials:ready", function () {
+      var ico = window.PATRI_ICON;
+      document.getElementById("solutions-grid").innerHTML = SOL.map(function (s, i) {
+        return '<article class="card reveal" id="' + s[0] + '" data-delay="' + ((i % 2) + 1) + '" style="padding:0;overflow:hidden">' +
+          '<div class="' + s[2] + '" style="height:150px;position:relative;border-radius:0"><div class="media-pattern"></div><span class="ico-float">' + ico(s[1]) + '</span></div>' +
+          '<div style="padding:26px"><h3>' + s[3] + '</h3><p class="text-muted" style="margin:8px 0 14px;font-size:.93rem">' + s[4] + '</p>' +
+          '<ul class="pc-list" style="margin:0 0 18px">' + s[5].map(function (b) { return '<li>' + ico("check") + b + '</li>'; }).join("") + '</ul>' +
+          '<a class="link-arrow" href="contact.html">Découvrir ' + ico("arrow") + '</a></div></article>';
+      }).join("");
+      document.getElementById("enjeux-grid").innerHTML = ENJEUX.map(function (e, i) {
+        return '<div class="card enjeu reveal" data-delay="' + ((i % 3) + 1) + '"><div class="ico-box sm">' + ico(e[0]) + '</div><div><h4>' + e[1] + '</h4><p>' + e[2] + '</p></div></div>';
+      }).join("");
+      // Réobserver les éléments injectés
+      if (window.PATRI_REVEAL) window.PATRI_REVEAL();
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

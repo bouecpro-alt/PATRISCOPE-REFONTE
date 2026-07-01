@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ressources — Blog, études de cas et guides — PATRISCOPE</title>
+  <meta name="description" content="Blog, études de cas, livres blancs, webinaires et guides pratiques pour exceller dans la gestion de vos actifs techniques." />
+  <meta name="theme-color" content="#1E3DF2" />
+  <link rel="canonical" href="https://www.patriscope.app/ressources.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+  <meta property="og:title" content="Ressources PATRISCOPE" />
+  <meta property="og:description" content="Insights, études de cas et guides pour l'excellence opérationnelle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero" style="padding-bottom:40px">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <div style="max-width:720px">
+          <span class="badge reveal"><span class="dot"></span> Ressources</span>
+          <h1 class="reveal" data-delay="1" style="margin-top:20px">Des insights pour l'excellence <span class="gradient-text">opérationnelle.</span></h1>
+          <p class="lead reveal" data-delay="2" style="margin-top:18px">Stratégies, retours d'expérience et bonnes pratiques en gestion d'actifs techniques.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px">
+      <div class="container">
+        <!-- Barre de filtres -->
+        <div class="reveal" style="display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:34px">
+          <div class="tabs" id="res-filters" role="tablist" style="flex-wrap:wrap">
+            <button class="tab active" data-cat="Tous">Tous</button>
+            <button class="tab" data-cat="Blog">Blog</button>
+            <button class="tab" data-cat="Études de cas">Études de cas</button>
+            <button class="tab" data-cat="Livres blancs">Livres blancs</button>
+            <button class="tab" data-cat="Webinaires">Webinaires</button>
+            <button class="tab" data-cat="Guides">Guides</button>
+          </div>
+          <div class="field" style="margin:0;min-width:240px">
+            <div style="position:relative">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--t-faint)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input id="res-search" type="search" placeholder="Rechercher une ressource…" aria-label="Rechercher" style="padding-left:40px" />
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-3" id="res-grid"></div>
+        <p id="res-empty" class="text-muted" style="text-align:center;display:none;padding:40px 0">Aucune ressource ne correspond à votre recherche.</p>
+        <div style="text-align:center;margin-top:44px"><button id="res-more" class="btn btn--secondary btn--lg">Charger plus de ressources</button></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/partials.js"></script>
+  <script>
+    var RES = [
+      ["Études de cas","media-collec","Comment CityCorp a économisé 22 % sur sa maintenance annuelle","Stratégie de centralisation des actifs sur 14 sites pour réduire les arrêts non planifiés.","12 juin 2026"],
+      ["Blog","media-tech","L'avenir de la gestion des installations en 2026","La convergence de l'IA et de la GMAO au service de bâtiments plus performants.","3 juin 2026"],
+      ["Livres blancs","media-eti","Cadre de conformité réglementaire","Le guide complet pour maîtriser vos obligations de contrôle et sécuriser vos PV.","21 mai 2026"],
+      ["Blog","media-multi","Stratégie d'électrification de flotte","Piloter la transition vers les véhicules électriques sans perdre en visibilité.","9 mai 2026"],
+      ["Webinaires","media-ind","Maintenance prédictive : par où commencer ?","45 minutes avec nos experts pour structurer une démarche prédictive efficace.","2 mai 2026"],
+      ["Guides","media-fm","Réussir l'inventaire de son patrimoine technique","Méthode pas à pas pour cartographier et qualifier vos actifs en 30 jours.","24 avr. 2026"],
+      ["Études de cas","media-infra","Un réseau d'eau pilote 8 000 équipements répartis","Retour d'expérience sur la supervision d'infrastructures étendues.","15 avr. 2026"],
+      ["Blog","media-immo","5 indicateurs clés pour piloter vos coûts d'exploitation","Les KPIs à suivre pour transformer vos données en décisions.","7 avr. 2026"],
+      ["Livres blancs","media-tech","Digitaliser les interventions terrain","Comment le QR Code transforme le quotidien des équipes de maintenance.","28 mars 2026"],
+      ["Webinaires","media-collec","Collectivités : sécuriser ses contrôles obligatoires","Démonstration dédiée aux services techniques des collectivités.","19 mars 2026"],
+      ["Guides","media-eti","Calculer la valeur résiduelle de vos actifs","Les méthodes d'amortissement expliquées simplement.","10 mars 2026"],
+      ["Blog","media-ind","Réduire les arrêts non planifiés en industrie","Les leviers concrets pour gagner en disponibilité machine.","1 mars 2026"]
+    ];
+    var arrowSVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>';
+    var state = { cat: "Tous", q: "", shown: 6 };
+
+    function filtered() {
+      return RES.filter(function (r) {
+        var okCat = state.cat === "Tous" || r[0] === state.cat;
+        var okQ = !state.q || (r[2] + " " + r[3]).toLowerCase().indexOf(state.q.toLowerCase()) > -1;
+        return okCat && okQ;
+      });
+    }
+    function render() {
+      var list = filtered();
+      var slice = list.slice(0, state.shown);
+      var grid = document.getElementById("res-grid");
+      grid.innerHTML = slice.map(function (r, i) {
+        var badgeCls = r[0] === "Études de cas" ? "badge--pop" : "badge--soft";
+        return '<article class="card res-card reveal" data-delay="' + ((i % 3) + 1) + '">' +
+          '<a class="thumb" href="#"><div class="' + r[1] + '"></div><span class="cat badge ' + badgeCls + '">' + r[0] + '</span></a>' +
+          '<div class="body"><p class="meta">' + r[4] + '</p><h3>' + r[2] + '</h3><p>' + r[3] + '</p>' +
+          '<a class="link-arrow" href="#">Lire ' + arrowSVG + '</a></div></article>';
+      }).join("");
+      document.getElementById("res-empty").style.display = list.length ? "none" : "block";
+      document.getElementById("res-more").style.display = list.length > state.shown ? "inline-flex" : "none";
+      if (window.PATRI_REVEAL) window.PATRI_REVEAL();
+    }
+    document.addEventListener("partials:ready", function () {
+      // Pré-sélection via ancre (#blog, #etudes…)
+      var map = { blog: "Blog", etudes: "Études de cas", "livres-blancs": "Livres blancs", webinaires: "Webinaires", guides: "Guides" };
+      var h = location.hash.replace("#", "");
+      if (map[h]) state.cat = map[h];
+      document.querySelectorAll("#res-filters .tab").forEach(function (t) {
+        t.classList.toggle("active", t.dataset.cat === state.cat);
+        t.addEventListener("click", function () {
+          state.cat = t.dataset.cat; state.shown = 6;
+          document.querySelectorAll("#res-filters .tab").forEach(function (x) { x.classList.toggle("active", x === t); });
+          render();
+        });
+      });
+      document.getElementById("res-search").addEventListener("input", function (e) { state.q = e.target.value; state.shown = 6; render(); });
+      document.getElementById("res-more").addEventListener("click", function () { state.shown += 6; render(); });
+      render();
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
